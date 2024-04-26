@@ -15,6 +15,7 @@
     <description>effective-java-part1</description>
     <properties>
         <java.version>11</java.version>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
@@ -34,11 +35,11 @@
             <version>1.9</version>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>me.whiteship.hello</groupId>-->
-<!--            <artifactId>chinese-hello-service</artifactId>-->
-<!--            <version>0.0.1-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>me.whiteship.hello</groupId>
+            <artifactId>chinese-hello-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
