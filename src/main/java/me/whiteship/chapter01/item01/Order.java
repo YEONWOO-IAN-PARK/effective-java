@@ -12,7 +12,6 @@ public class Order {
 
     private OrderStatus orderStatus;
 
-
     /*
     * 자바에서는 동일한 시그니처의 생성자 함수를 두 개 이상 만들 수 없다.
     * 하지만 특수한 목적으로 아래 처럼 동일한 타입의 다른 변수를 넣고 싶을 때는..?
@@ -53,5 +52,4 @@ public class Order {
             System.out.println("delivered");
         }
     }
-
 }

@@ -18,6 +18,9 @@ public class Product {
         System.out.println(settings1);
         System.out.println(settings2);
 
+        /*
+        3. 호출될 때 마다 인스턴스를 새로 생성하지 않아도 된다. (Boolean.valueOf)
+        */
         Boolean.valueOf(false);
         EnumSet.allOf(Difficulty.class);
     }

@@ -19,7 +19,7 @@ public class UtilityClass {
         String hello = UtilityClass.hello();
 
         UtilityClass utilityClass = new UtilityClass();
-        utilityClass.hello();
+        String hello1 = utilityClass.hello();
 
 
     }
