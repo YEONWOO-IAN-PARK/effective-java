@@ -1,7 +1,5 @@
 package me.whiteship.chapter01.item03.staticfactory;
 
-import java.util.Objects;
-
 // 코드 3-2 제네릭 싱글톤 팩토리 (24쪽)
 public class MetaElvis<T> {
 

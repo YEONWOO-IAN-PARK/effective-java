@@ -1,7 +1,5 @@
 package me.whiteship.chapter01.item04;
 
-import org.springframework.context.annotation.AnnotationConfigUtils;
-
 public class UtilityClass {
 
     /**

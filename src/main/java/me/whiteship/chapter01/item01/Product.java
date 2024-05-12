@@ -1,7 +1,6 @@
 package me.whiteship.chapter01.item01;
 
 import java.util.EnumSet;
-import java.util.Set;
 
 public class Product {
 

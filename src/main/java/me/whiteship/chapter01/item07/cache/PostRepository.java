@@ -1,6 +1,5 @@
 package me.whiteship.chapter01.item07.cache;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 

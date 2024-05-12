@@ -1,7 +1,6 @@
 package me.whiteship.chapter01.item03.serialization;
 
 import java.io.*;
-import java.time.LocalDate;
 
 public class SerializationExample {
 

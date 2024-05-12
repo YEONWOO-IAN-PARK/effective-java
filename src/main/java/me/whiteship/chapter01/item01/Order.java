@@ -1,7 +1,5 @@
 package me.whiteship.chapter01.item01;
 
-import java.util.*;
-
 public class Order {
 
     private boolean prime;

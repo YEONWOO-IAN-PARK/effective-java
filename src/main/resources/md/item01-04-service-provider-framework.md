@@ -1,0 +1,20 @@
+## 4. 서비스 제공자 프레임워크  
+확장 가능한 애플리케이션을 만드는 방법
+
+- 주요 구성 요소
+  - 서비스 제공자 인터페이스(SPI)와 서비스 제공자(서비스 구현체)
+    - 구현체는 같은 프로젝트 내, 다른 프로젝트 내에 있어도 상관없다(HelloChineseService.java)
+  - 서비스 제공자 등록 API (서비스 인터페이스의 구현체를 등록하는 방법)
+    - AppConfig.java의 @Configuration 어노테이션 부착
+    - hello-chinese-service 프로젝트의 resources/META-INF/services/me.whiteship.chapter01.item01.HelloService 파일
+  - 서비스 접근 API (서비스의 클라이언트가 서비스의 인터페이스의 인스턴스를 가져올 때 사용하는 API)
+    - App.java의 applicationContext.getBean(HelloService.class); 이 대표적인 서비스 접근 API 사용방식이다.
+    - HelloChineseFactory.java의 ServiceLoader.load(HelloService.class); load하는 부분
+- 다양한 변형
+  - 브릿지 패턴
+  - 의존 객체 주입 프레임 워크
+  - java.util.ServiceLoader
+    - https://docs.oracle.com/javase/tutorial/soud/SPI-intro.html
+    - https://docs.oracle.com/javase/tutorial/ext/basics/spi.html
+
+  

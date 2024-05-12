@@ -66,5 +66,44 @@ public enum OrderStatus {
 }
 ```
 
-질문3 해답  : 그렇다. ==으로 enum의 상수끼리 비교를 하게 된다면 객체의 동일성을 비교하게 된다. (메모리 주소 + 내용이 같은지 비교)
+질문3 해답  : 그렇다. ==으로 enum의 상수끼리 비교를 하게 된다면 객체의 동일성을 비교하게 된다. (같은 메모리 주소를 참조하는지 검사)  
+```java
+enum Color {
+    RED, GREEN, BLUE
+}
+
+public class EnumComparison {
+    public static void main(String[] args) {
+        Color a = Color.RED;
+        Color b = Color.RED;
+        Color c = Color.BLUE;
+
+        System.out.println(a == b); // true 출력
+        System.out.println(a == c); // false 출력
+    }
+}
+```  
 질문3 해답2 : 그렇다면 equals()로 비교하게 된다면? -> 재정의를 하지 않는 이상 내부적으로는 == 비교이기 때문에 위와 결과가 같다. 
+
+
+- 과제1.  enum을 key로 사용하는 Map을 정의하시오. 또는 enum을 담고있는 Set을 만들어보시오.
+
+```java
+import java.util.HashMap;
+
+public enum Season {
+    SPRING, SUMMER, FALL, WINTER
+}
+
+public static void main(String[] args) {
+	// enum을 key로 하는 Map 정의하기 (EnumMap 사용X)
+	Map<Season, Object> enumMap = new HashMap<>();
+	enumMap.put(SPRING, obj1);
+	enumMap.put(SUMMER, obj2);
+	
+	// enum을 담고있는 Set 만들기 (EnumSet 사용X)
+	Set<Season> enumSet = new HashSet<>();
+	enumSet.add(Season.SPRING);
+	enumSet.add(Season.SUMMER);
+}
+```
