@@ -1,5 +1,9 @@
 package me.whiteship.chapter01.item02.hierarchicalbuilder;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
 import java.util.EnumSet;
 import java.util.Objects;
 import java.util.Set;
@@ -18,6 +22,7 @@ public abstract class Pizza {
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));
             return self();
+//            return this;  // 자기 자신을 리턴하게 된다면 리턴타입이 Pizza.Builder이므로 서브클래스를 사용할 때 마다 형변환이 필요하다.
         }
 
         abstract Pizza build();
@@ -31,3 +36,4 @@ public abstract class Pizza {
         toppings = builder.toppings.clone(); // 아이템 50 참조
     }
 }
+

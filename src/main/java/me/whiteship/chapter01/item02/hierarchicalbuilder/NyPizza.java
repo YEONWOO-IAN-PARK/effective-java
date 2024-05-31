@@ -18,6 +18,7 @@ public class NyPizza extends Pizza {
             return new NyPizza(this);
         }
 
+        // 자기 자신을 리턴하게 하면서 메서드 체이닝을 가능하게 한다.
         @Override protected Builder self() { return this; }
     }
 
