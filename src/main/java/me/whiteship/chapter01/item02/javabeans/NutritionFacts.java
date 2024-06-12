@@ -8,6 +8,9 @@ import java.io.Serializable;
 // 2. 클래스는 기본 생성자를 가져야 한다.
 // 3. 프로퍼티 접근을 위한 getter, setter를 제공해야 한다.
 public class NutritionFacts implements Serializable {
+    // Serializable : 객체를 직렬화한다. (직렬화해서 어딘가에 저장을 해놓고 나중에 다시 읽어서 사용하겠다는 의도가 있음
+
+
     // 필드 (기본값이 있다면) 기본값으로 초기화된다.
     private int servingSize  = -1; // 필수; 기본값 없음
     private int servings     = -1; // 필수; 기본값 없음
@@ -23,7 +26,6 @@ public class NutritionFacts implements Serializable {
     // 3. Bean의 재사용성과 유연성 : 기본 생성자로 객체 생성 후 setter로 값을 주입한다.
     // 4. 편리한 객체 생성 : 복잡한 매개변수 없이 객체를 생성할 수 있다.
     public NutritionFacts() { }
-
 
     public int getServingSize() {
         return servingSize;
