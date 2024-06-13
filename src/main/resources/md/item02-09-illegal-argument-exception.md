@@ -15,11 +15,60 @@ public void someMethod() throws NullPointerException, IllegalArgumentException {
 ```
   
 - 질문3) checked exception은 왜 사용할까?
-  - 
-  
+  - 답변3) 컴파일 시점에 IOException, SQLException과 같이 외부 자원에 대한 예외가 발생했을 때 일어나게 되는데 해당 예외 처리를 통해 후처리를 할 수 있다.
 
   
 - 과제1) 자바의 모든 RuntimeException 클래스 이름 한번씩 읽어보기
+  물론입니다. 다음은 숫자가 매겨진 목록입니다:
+  
+  1. **ArithmeticException** : 잘못된 산술 연산이 수행될 때 발생한다. 예를 들어 분모가 0일 때 발생한다.
+  2. **ArrayIndexOutOfBoundsException** : 배열의 인덱스가 범위를 벗어날 때 발생한다.
+  3. ArrayStoreException : 배열에 잘못된 타입의 객체를 저장하려 할 때 발생한다.
+  4. **ClassCastException** : 객체를 특정 클래스의 형식으로 캐스팅 할 때 실패하면 발생한다.
+  5. **IllegalArgumentException** : 메서드에 잘못된 인자를 전달할 때 발생한다.
+  6. IllegalMonitorStateException : 스레드가 모니터를 잘못 사용할 때 발생한다. 예를 들어, 현재 스레드가 소유하지 않은 모니터를 해제하려 할 때 발생한다.
+  7. **IllegalStateException** : 메서드를 호출할 때 객체의 상태가 적절하지 않으면 발생한다.
+  8. IllegalThreadStateException : 스레드가 잘못된 상태에서 작업을 시도할 때 발생한다.
+  9. **IndexOutOfBoundsException** : 컬렉션, 문자열 또는 배열의 인덱스가 범위를 벗어날 때 발생한다.
+  10. NegativeArraySizeException : 음수 크기의 배열을 생성할 때 발생한다.
+  11. **NullPointerException** : 참조 변수가 null일 때, 객체의 멤버에 접근하려 할 때 발생한다.
+  12. **NumberFormatException** : 문자열을 숫자로 변환할 때 적절하지 않은 형식의 문자열을 제공할 때 발생한다.
+  13. SecurityException : 보안 관리자에 의해 허용되지 않는 작업을 시도할 때 발생한다.
+  14. **UnsupportedOperationException** : 메서드가 지원되지 않는 연산을 시도할 때 발생한다.
+  15. **ConcurrentModificationException** : 컬렉션이 구조적으로 수정되는 동안 컬렉션의 요소를 반복하려고 할 때 발생한다.
+  16. EmptyStackException : 스택이 비어 있을 때 팝 또는 피크 작업을 시도할 때 발생한다.
+  17. MissingResourceException : 지정된 리소스가 리소스 번들에서 발견되지 않을 때 발생한다.
+  18. AnnotationTypeMismatchException : 애노테이션의 요소 타입이 잘못된 경우 발생한다.
+  19. BufferOverflowException : 버퍼의 용량을 초과하여 데이터를 추가하려 할 때 발생한다.
+  20. BufferUnderflowException : 버퍼의 데이터가 부족한데 데이터를 읽으려 할 때 발생한다.
+  21. CannotRedoException : 작업을 다시 수행할 수 없을 때 발생한다.
+  22. CannotUndoException : 작업을 되돌릴 수 없을 때 발생한다.
+  23. CompletionException : 비동기 작업 중 예외가 발생했을 때 발생한다.
+  24. DataBindingException : 데이터 바인딩 중 예외가 발생했을 때 발생한다.
+  25. DateTimeException : 날짜/시간 처리 중 예외가 발생했을 때 발생한다.
+  26. EnumConstantNotPresentException : 열거형 상수가 존재하지 않을 때 발생한다.
+  27. FileSystemAlreadyExistsException : 파일 시스템이 이미 존재할 때 발생한다.
+  28. IllformedLocaleException : 잘못된 형식의 로케일을 사용할 때 발생한다.
+  29. IncompleteAnnotationException : 애노테이션의 일부 요소가 누락되었을 때 발생한다.
+  30. InvalidPathException : 경로 문자열이 잘못되었을 때 발생한다.
+  31. MalformedParameterizedTypeException : 매개변수가 잘못된 제네릭 타입을 사용할 때 발생한다.
+  32. MirroredTypesException : 주석 처리된 원시 타입이 미러링되어 발생한다.
+  33. MissingFormatArgumentException : 포맷 문자열에 필요한 인자가 누락되었을 때 발생한다.
+  34. MissingFormatWidthException : 포맷 문자열의 너비가 누락되었을 때 발생한다.
+  35. NoSuchElementException : 요청된 요소가 존재하지 않을 때 발생한다.
+  36. NoSuchMechanismException : 요청된 메커니즘이 존재하지 않을 때 발생한다.
+  37. PatternSyntaxException : 정규 표현식의 구문이 잘못되었을 때 발생한다.
+  38. ProviderException : 보안 공급자와 관련된 예외가 발생했을 때 발생한다.
+  39. RejectedExecutionException : 작업이 실행 관리자에 의해 거부될 때 발생한다.
+  40. TypeNotPresentException : 요청된 타입이 존재하지 않을 때 발생한다.
+  41. UncheckedIOException : 입출력 예외를 체크되지 않은 예외로 변환할 때 발생한다.
+  42. UndeclaredThrowableException : 선언되지 않은 예외가 던져졌을 때 발생한다.
+  43. UnknownFormatConversionException : 포맷 문자열에서 알 수 없는 변환 문자가 있을 때 발생한다.
+  44. UnknownFormatFlagsException : 포맷 문자열에서 알 수 없는 플래그가 있을 때 발생한다.
+  45. UnsupportedTemporalTypeException : 날짜/시간 타입이 지원되지 않을 때 발생한다.
+  46. WrongMethodTypeException : 메서드 타입이 잘못되었을 때 발생한다.
+
+
 - 과제2) 링크의 글 꼭 읽기
 
   
